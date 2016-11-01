@@ -354,3 +354,65 @@ hr.line-space {
   border-style: solid;
   border-color: #d3b100 transparent;
 }
+
+
+
+
+form{
+	margin-top: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select{
+  width:100%;
+  max-width:100%;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 2px solid #000;
+  margin: .5em 0 0.8em 0;
+}
+
+
+textarea{
+  min-height:15em;
+}
+
+input[type="submit"].btn{
+  outline:none;
+  background: transparent;
+  text-align:center;
+}
+
+input[type="submit"], .btn:hover{
+    border:2px solid #000;;
+    color:#000;;
+
+  }
+
+
+
+.btn {
+	padding: 6px 12px;
+	background-color: #fff;
+    border-color: #ccc;
+	border-radius: 4px;
+	border: 1px solid;
+}
+
+.btn.btn-medium{
+	padding: 10px 16px;
+	background-color:#fff;
+    border-color: #ccc;
+	border-radius: 4.2px;
+	border: 1.5px solid;
+}
+
+
+.text-header{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
