@@ -61,7 +61,7 @@ p {
     -webkit-transform: translate3d(-300px,0,0);
             transform: translate3d(-300px,0,0);
     width: 300px;
-    background: #3f3736; /*#BF0000 */
+    background: #3f3736;
     padding: 5rem;
 }
 
