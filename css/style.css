@@ -12,6 +12,7 @@ body {
 
 a {
     color: #FF5249;
+    text-decoration:none;
 }
 
 h1 {
@@ -332,6 +333,12 @@ hr.line-space {
   background: #ffd707;
   position: relative;
   min-height: 2em;
+  cursor: pointer;
+}
+
+a .post-it-note{
+    color:#fff;
+    
 }
 
 .post-it-note:after {
@@ -415,4 +422,16 @@ input[type="submit"], .btn:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
+}
+
+
+.text-skills{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 75%;
+}
+
+.text-skills li{
+    font-size: 20px;
+    margin-bottom: 15px;
 }
