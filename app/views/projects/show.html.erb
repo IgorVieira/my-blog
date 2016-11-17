@@ -1,0 +1,6 @@
+<h1><%= @project.title%></h1>
+<div><%= @project.body.html_safe%></div>
+<% if user_signed_in? %>
+  <%= link_to "Edit Post", edit_project_path(@project) %>
+  <%= link_to "Delete Post", project_path(@project), method: :delete, data:{confirm: "Are you sure?"} %>
+<% end %>

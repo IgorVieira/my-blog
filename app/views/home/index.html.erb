@@ -1,0 +1,17 @@
+                <h1 class="text-header">Igor Vieira</h1>
+                <hr class="line-space">
+                
+                <ul class="flex-container">
+                <% @posts.each do |post| %>
+                    <li class="flex-item">
+                       <a href="post.html">
+                            <div class="post-it-note">
+                            <p class="post-it-text"><a href="#"><%= link_to post.title, post%></a></p>
+                            <p class="date"><%= post.created_at.strftime("%A,%b %d")%></p>
+                        </div>
+                       </a>
+                    </li>
+                     
+                    <% end %>
+                    
+                </ul>

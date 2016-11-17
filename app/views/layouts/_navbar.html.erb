@@ -1,0 +1,18 @@
+<div class="wrapper">
+        <div class="canvas">
+
+            <!-- Aqui fica o menu escondido -->
+            <div class="menu">
+               
+                <ul>
+                    <li class="home toggle-menu"><%= link_to 'Home', root_path%></li>
+                    <li class="sobre toggle-menu"><%= link_to 'Sobre mim', about_index_path%></li>
+                    <li class="port toggle-menu"><%= link_to 'Portfólio', projects_path%></li>
+                    <li class="contact toggle-menu"><%= link_to 'Contato', new_contact_path%></li>   
+                </ul>
+            </div>
+
+            <!-- Aqui fica o conteúdo do site -->
+            <div class="toggle-menu  menu-anchor"></div>
+           
+            <div class="conteudo">

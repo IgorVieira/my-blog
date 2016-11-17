@@ -1,0 +1,173 @@
+@import 'colors';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: $bodycolor;
+}
+
+a {
+    color: $linkcolor;
+    text-decoration:none;
+}
+
+h1 {
+    padding: 25px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
+.menu-anchor {
+    top: 0;
+  width: 60px;
+  height: 52px;
+    z-index: 9999;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+  background: $darkcolor;
+    border-radius: 1px;
+    &:before {
+      content: "";
+      display: block;
+      margin: 15px auto;
+      width: 80%;
+      height: 0.30em;
+      background: #f49c14;
+      box-shadow: 0 .45em 0 0 #f49c14, 0 .9em 0 0 #f49c14;
+    }
+
+    
+}
+
+
+
+
+
+
+.about-img-me{
+    align-content: center;
+    border-radius: 100%;
+    border: 5px solid #ccc;
+    width: 10rem;
+    height: 9em;
+    margin: 12px;
+    shape-outside: inset(-5px round 100px ) border-box;
+
+    
+    
+}
+
+.about-text-me{
+    margin-left: -5px;
+}
+
+
+hr.line-space {
+    height: 0.02rem;   
+    margin-bottom: 20px;
+}
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 5px;
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: $whitecolor;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+
+
+
+
+.post-it-text {
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.post-it-note {
+  padding: 1em;
+  background: $backpostitcolor;
+  position: relative;
+  min-height: 2em;
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1em;
+    left: 0;
+    right: 1em;
+    border-width: 0.5em;
+    border-style: solid;
+    border-color: $postitcolor;
+  }
+
+  &:before {
+      content: "";
+      position: absolute;
+      bottom: -1em;
+      right: 0;
+      border-width: 1em 1em 0 0;
+      border-style: solid;
+      border-color: $datailpostit_color transparent;
+  }
+}
+
+a .post-it-note{
+    color:$whitecolor
+    
+}
+
+
+
+
+.text-header{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+.text-skills{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 75%;
+    li{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+

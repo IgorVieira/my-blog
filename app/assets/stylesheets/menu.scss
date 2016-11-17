@@ -1,0 +1,151 @@
+@import 'colors';
+.canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: translate3d(0);
+            transform: translate3d(0);
+    -webkit-transition: .3s ease all;
+            transition: .3s ease all;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: margin 0 auto; 
+    &.show-menu .canvas {
+      -webkit-transform: translate3d(300px,0,0);
+              transform: translate3d(300px,0,0);
+  }
+}
+
+
+
+
+
+
+.conteudo {
+    margin-top:-150px;
+    padding: 10%;
+}
+
+@media screen and (max-width: 580px){
+    
+    .conteudo {
+        margin-top:0px;
+    }
+
+}
+
+.menu {
+    height: 100%;
+    position: absolute;
+    -webkit-transform: translate3d(-300px,0,0);
+            transform: translate3d(-300px,0,0);
+    width: 300px;
+    background: #3f3736; /*#BF0000 */
+    padding: 5rem;
+
+    a {
+    
+	    font-size: 1em;
+	    display: inline-block;
+	    padding: 10px;
+	    color: #FFF;
+	    text-decoration: none;
+	    &:hover{
+		    cursor: pointer;
+		}
+	}
+
+	
+
+
+	 ul {
+		    list-style: none;
+		    text-transform: uppercase;
+      /*##### Home ######*/  
+		  li.home{
+  			  display: inline-block;
+  			  &.home:after {
+  				  content: '';
+  				  display: block;
+  				  margin: auto;
+  				  height: 3px;
+  				  width: 0px;
+  				  background: transparent;
+  				  transition: width .5s ease, background-color .5s ease;
+  				}
+  				&.home:hover:after {
+  				  width: 85%;
+  				  background: $homecolor;
+  				}
+  		/*##### End Home ######*/
+
+
+      /*##### Sobre ######*/   
+  		}
+      li.sobre{
+          display: inline-block;
+          &.sobre:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease, background-color .5s ease;
+          }
+          &.sobre:hover:after {
+            width: 85%;
+            background: $aboutcolor;
+          }
+         
+      }
+      /*##### End Sobre ######*/
+
+      /*##### Portfólio ######*/
+      li.port{
+          display: inline-block;
+          &.port:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease, background-color .5s ease;
+          }
+          &.port:hover:after {
+            width: 85%;
+            background: $portcolor;
+          }
+         
+      }
+      /*##### End Portfólio ######*/
+
+
+      /*##### Contato ######*/
+      li.contact{
+          display: inline-block;
+          &.contact:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease, background-color .5s ease;
+          }
+          &.contact:hover:after {
+            width: 85%;
+            background: $contactcolor;
+          }
+         
+      }
+      /*##### End Contato ######*/
+	}
+	
+}
