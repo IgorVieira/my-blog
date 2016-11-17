@@ -2177,3 +2177,1966 @@ Processing by HomeController#index as HTML
   Rendered layouts/_navbar.html.erb (0.3ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:23:25 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 908ms (Views: 843.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:26 -0200
+
+
+Started GET "/about" for 127.0.0.1 at 2016-11-17 18:23:28 -0200
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/igor-6ba68f392dcc1395124bf0f9e01f6583b489e1be562f364c2175268b5bda2301.jpg" for 127.0.0.1 at 2016-11-17 18:23:29 -0200
+
+
+Started GET "/about" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:23:33 -0200
+
+
+Started GET "/projects" for 127.0.0.1 at 2016-11-17 18:23:36 -0200
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2: 	<h2><%= post.title%></h2>
+    3: 	<div><%= post.body.html_safe%></div>
+    4: 	<br>
+  app/views/projects/index.html.erb:1:in `_app_views_projects_index_html_erb__1074330314639218463_47301914210760'
+
+
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.4ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (304.0ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (323.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-17 18:25:57 -0200
+Processing by HomeController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:25:59 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/hello-word/edit" for 127.0.0.1 at 2016-11-17 18:26:03 -0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (76.3ms)
+  Rendered posts/edit.html.erb within layouts/application (78.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 250ms (Views: 112.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:04 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:04 -0200
+
+
+Started GET "/assets/ckeditor/lang/pt-br.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:04 -0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:04 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/icons.png?t=b47abaf" for 127.0.0.1 at 2016-11-17 18:26:04 -0200
+
+
+Started GET "/assets/ckeditor/contents.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:04 -0200
+
+
+Started GET "/assets/ckeditor/plugins/magicline/images/icon.png?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:19 -0200
+
+
+Started PATCH "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:26:25 -0200
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1q8nguCVrqIdwKqXukO+kqhYoQEyzs+9HIi2vEfsCQ0yhfpQx1Ch4MpeMP6USZ8JBryjmmrr/F54GZ95r6Xmg==", "post"=>{"title"=>"Hello Word!", "body"=>"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minima doloremque, explicabo blanditiis aut nemo ex, nesciunt eos, laboriosam distinctio voluptatum! Blanditiis, eligendi. Ab quasi esse incidunt doloribus, nam obcaecati magni facilis labore fugit quia amet enim similique debitis vitae voluptate, asperiores quidem sapiente dolor, quisquam quis? Incidunt qui dolore dolorum doloribus numquam hic asperiores facilis voluptas iste, deleniti aliquid, repellendus eveniet provident beatae a magni possimus labore quod aspernatur.&nbsp;<br />\r\nCum animi debitis temporibus labore distinctio dolorem voluptas magnam ipsa est nam, quia, cupiditate. Reiciendis deserunt laboriosam cum voluptates maxime adipisci accusamus est iste provident dolor, asperiores nisi, accusantium fuga dolore veritatis quam quo, optio tenetur a, ullam repellendus. Dolorum eum, ex aliquam voluptatibus cupiditate reiciendis voluptas delectus facilis necessitatibus qui sint iure possimus sapiente, nesciunt aperiam cumque voluptates consectetur. Adipisci et facere explicabo officiis natus sed, aut dicta pariatur cupiditate neque ad nam sit, consequatur fugiat, a ea optio corporis.&nbsp;<br />\r\nReiciendis repudiandae modi dolores voluptatem tempora deserunt eaque eveniet, nam temporibus dolorem rem alias ex qui, minus beatae eum assumenda harum veritatis sunt consequuntur. Quis culpa cum tempora nihil fugiat repellendus deserunt iste doloremque quod perspiciatis, hic unde dolorum molestiae nam error consectetur a placeat asperiores impedit quibusdam voluptatem sint magnam excepturi totam. Et doloremque veritatis laboriosam voluptates vero qui sint laborum ex blanditiis maiores error vel ducimus aut quaerat soluta beatae nihil porro, autem nostrum voluptatem quos, neque provident explicabo! Perferendis numquam error, inventore ipsam unde mollitia et aliquid natus. Similique explicabo facilis numquam voluptate quod, amet ipsa quibusdam neque unde, odio harum maxime perferendis excepturi, laboriosam vitae quis, ab sequi corrupti.&nbsp;<br />\r\nTenetur error, doloremque aliquam corporis. Adipisci, cum sapiente veritatis, aspernatur eveniet unde vitae, assumenda perspiciatis atque ratione libero? Quam, obcaecati delectus officiis! Omnis ab rerum sapiente voluptas, dicta natus, architecto obcaecati est repellendus commodi magnam minima vitae nesciunt? Repudiandae eos ex odio temporibus, ipsum molestias, tempore enim laborum laboriosam consequatur ratione optio veritatis illum. Perferendis quis, commodi nemo, eligendi optio possimus deserunt minus magnam aut corporis quidem assumenda quibusdam iusto soluta sapiente similique libero maxime dignissimos non neque excepturi expedita impedit? Doloremque et eos sequi expedita nostrum voluptates, non laboriosam sunt ut quidem, dolores harum sed, repudiandae aliquid minima magnam dicta! Ducimus voluptates laboriosam itaque ut natus enim, soluta placeat corporis mollitia explicabo, possimus atque alias eveniet. Nesciunt, blanditiis, cumque! Ut qui tempora quis, doloribus omnis tempore nobis consequatur ipsum atque eos expedita numquam animi, iste minus est blanditiis ullam? Iure quibusdam voluptate quaerat minus fugiat assumenda voluptatem aliquid nobis id deleniti dicta qui repellendus iusto cumque obcaecati nulla labore necessitatibus ipsa explicabo, libero unde. Consectetur sapiente labore nesciunt iusto provident, incidunt necessitatibus enim voluptate laboriosam dignissimos voluptatem quia molestias, at quaerat minima et facere aut eius numquam unde veniam! Repudiandae ab, asperiores quibusdam vel exercitationem et eaque vitae maxime perferendis, tempore cupiditate, accusantium enim, soluta at odit est. Praesentium assumenda maiores facere corrupti corporis aut nobis eius perferendis alias magni laborum numquam aperiam, quibusdam qui quae eos eaque dolorem cupiditate laboriosam earum. Blanditiis facilis voluptatum rerum omnis, similique pariatur. Minima illo fuga quaerat nobis a qui aut voluptas consequuntur beatae nesciunt iusto voluptatum molestias id sunt deserunt ipsa aliquid eveniet magni vitae, ducimus facere animi accusamus veritatis quod. Doloribus in quo cum consectetur, dolore quisquam omnis nemo officia at blanditiis quae beatae eius temporibus ad, dolorem inventore illum? Quam, accusamus voluptates cumque commodi autem accusantium ad illum quibusdam adipisci, voluptate cupiditate ipsa id similique.&nbsp;<br />\r\nCum exercitationem tenetur magni nemo, facere repellendus. Laboriosam repellendus consequatur aliquam dolores maxime atque facilis quisquam quam libero voluptates dignissimos, quaerat dicta laborum? Commodi veritatis dicta itaque repudiandae ducimus iure libero illum repellat quae fuga quisquam placeat in, nihil blanditiis consequatur sequi nesciunt sapiente impedit, neque velit sit ab sint. Quisquam suscipit quasi optio vitae eius harum excepturi sint voluptate error reprehenderit, quidem quis autem minus rem id beatae illo, blanditiis, cum eaque? Quod beatae illum reprehenderit similique praesentium dolores libero totam consequatur, voluptas maiores culpa. Fugit dolore qui quidem assumenda esse excepturi suscipit id ab nulla natus reprehenderit voluptatem quas a hic, aliquam sint atque numquam ea recusandae optio sed deserunt voluptatum explicabo quasi cumque? Fuga accusamus, eos consectetur eveniet nesciunt iure neque itaque dicta, sunt, error quidem laboriosam earum et nam numquam! Sequi at incidunt architecto amet delectus neque dolorem quisquam consectetur modi aut. Ad reiciendis, tenetur ut aut aliquam, iste qui deserunt, sed, laudantium doloremque veritatis expedita asperiores atque assumenda quibusdam delectus eligendi aliquid officia impedit dolore dolorum.&nbsp;<br />\r\nEos, reiciendis nam! Sunt voluptates amet doloribus dolore tempore rerum laborum distinctio aliquam doloremque? Sint, eos ad. Iure ab explicabo provident sint distinctio velit cum voluptates labore, assumenda error ut voluptatem aperiam, optio, tenetur! Fugiat nesciunt a quo sed animi sequi quis iure assumenda qui possimus, repellat libero deserunt similique esse fuga. Veritatis ipsam aliquid natus similique ullam dolorem fuga, porro asperiores doloribus neque dignissimos, soluta deleniti ut, vitae! Possimus maiores porro expedita, sunt minus officiis, accusamus vel, tempora aperiam fuga sapiente quasi earum quia fugit, doloremque doloribus explicabo laborum maxime soluta nulla quidem debitis. Facilis, at ab rerum! Culpa obcaecati quam maiores assumenda, reiciendis, explicabo soluta numquam sapiente recusandae maxime commodi dolor earum iusto nesciunt asperiores ex placeat consequatur quibusdam ipsam cupiditate reprehenderit? Quae officia eos, sapiente iste aliquid exercitationem repudiandae sint dolorem aut mollitia reiciendis perferendis id laudantium, perspiciatis fugiat.&nbsp;<br />\r\nMinima, voluptatum, hic necessitatibus qui accusamus libero quas, esse molestias possimus, nisi aspernatur excepturi voluptate rem dicta! Laborum similique nisi ducimus quam commodi voluptatum saepe, consequuntur assumenda eum dolores, nihil deleniti laudantium omnis a, optio quod magnam adipisci! Id, doloribus inventore velit alias quidem, quae. Non molestias, corporis delectus fuga recusandae est, consequuntur in esse error nisi maxime id quis deleniti inventore quas, officia quo quod corrupti! Error ipsa quam fugit porro eius quaerat adipisci expedita ducimus minima nam obcaecati voluptates alias odio non ea unde quis praesentium tenetur, magnam dolorum, suscipit aut reiciendis doloremque nisi. Magnam sed laborum a cum molestiae accusantium veritatis, soluta unde aspernatur, dolorem, amet consectetur pariatur tempora assumenda quos, doloremque harum reprehenderit earum!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"}, "commit"=>"Update Post", "id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["body", "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minima doloremque, explicabo blanditiis aut nemo ex, nesciunt eos, laboriosam distinctio voluptatum! Blanditiis, eligendi. Ab quasi esse incidunt doloribus, nam obcaecati magni facilis labore fugit quia amet enim similique debitis vitae voluptate, asperiores quidem sapiente dolor, quisquam quis? Incidunt qui dolore dolorum doloribus numquam hic asperiores facilis voluptas iste, deleniti aliquid, repellendus eveniet provident beatae a magni possimus labore quod aspernatur.&nbsp;<br />\r\nCum animi debitis temporibus labore distinctio dolorem voluptas magnam ipsa est nam, quia, cupiditate. Reiciendis deserunt laboriosam cum voluptates maxime adipisci accusamus est iste provident dolor, asperiores nisi, accusantium fuga dolore veritatis quam quo, optio tenetur a, ullam repellendus. Dolorum eum, ex aliquam voluptatibus cupiditate reiciendis voluptas delectus facilis necessitatibus qui sint iure possimus sapiente, nesciunt aperiam cumque voluptates consectetur. Adipisci et facere explicabo officiis natus sed, aut dicta pariatur cupiditate neque ad nam sit, consequatur fugiat, a ea optio corporis.&nbsp;<br />\r\nReiciendis repudiandae modi dolores voluptatem tempora deserunt eaque eveniet, nam temporibus dolorem rem alias ex qui, minus beatae eum assumenda harum veritatis sunt consequuntur. Quis culpa cum tempora nihil fugiat repellendus deserunt iste doloremque quod perspiciatis, hic unde dolorum molestiae nam error consectetur a placeat asperiores impedit quibusdam voluptatem sint magnam excepturi totam. Et doloremque veritatis laboriosam voluptates vero qui sint laborum ex blanditiis maiores error vel ducimus aut quaerat soluta beatae nihil porro, autem nostrum voluptatem quos, neque provident explicabo! Perferendis numquam error, inventore ipsam unde mollitia et aliquid natus. Similique explicabo facilis numquam voluptate quod, amet ipsa quibusdam neque unde, odio harum maxime perferendis excepturi, laboriosam vitae quis, ab sequi corrupti.&nbsp;<br />\r\nTenetur error, doloremque aliquam corporis. Adipisci, cum sapiente veritatis, aspernatur eveniet unde vitae, assumenda perspiciatis atque ratione libero? Quam, obcaecati delectus officiis! Omnis ab rerum sapiente voluptas, dicta natus, architecto obcaecati est repellendus commodi magnam minima vitae nesciunt? Repudiandae eos ex odio temporibus, ipsum molestias, tempore enim laborum laboriosam consequatur ratione optio veritatis illum. Perferendis quis, commodi nemo, eligendi optio possimus deserunt minus magnam aut corporis quidem assumenda quibusdam iusto soluta sapiente similique libero maxime dignissimos non neque excepturi expedita impedit? Doloremque et eos sequi expedita nostrum voluptates, non laboriosam sunt ut quidem, dolores harum sed, repudiandae aliquid minima magnam dicta! Ducimus voluptates laboriosam itaque ut natus enim, soluta placeat corporis mollitia explicabo, possimus atque alias eveniet. Nesciunt, blanditiis, cumque! Ut qui tempora quis, doloribus omnis tempore nobis consequatur ipsum atque eos expedita numquam animi, iste minus est blanditiis ullam? Iure quibusdam voluptate quaerat minus fugiat assumenda voluptatem aliquid nobis id deleniti dicta qui repellendus iusto cumque obcaecati nulla labore necessitatibus ipsa explicabo, libero unde. Consectetur sapiente labore nesciunt iusto provident, incidunt necessitatibus enim voluptate laboriosam dignissimos voluptatem quia molestias, at quaerat minima et facere aut eius numquam unde veniam! Repudiandae ab, asperiores quibusdam vel exercitationem et eaque vitae maxime perferendis, tempore cupiditate, accusantium enim, soluta at odit est. Praesentium assumenda maiores facere corrupti corporis aut nobis eius perferendis alias magni laborum numquam aperiam, quibusdam qui quae eos eaque dolorem cupiditate laboriosam earum. Blanditiis facilis voluptatum rerum omnis, similique pariatur. Minima illo fuga quaerat nobis a qui aut voluptas consequuntur beatae nesciunt iusto voluptatum molestias id sunt deserunt ipsa aliquid eveniet magni vitae, ducimus facere animi accusamus veritatis quod. Doloribus in quo cum consectetur, dolore quisquam omnis nemo officia at blanditiis quae beatae eius temporibus ad, dolorem inventore illum? Quam, accusamus voluptates cumque commodi autem accusantium ad illum quibusdam adipisci, voluptate cupiditate ipsa id similique.&nbsp;<br />\r\nCum exercitationem tenetur magni nemo, facere repellendus. Laboriosam repellendus consequatur aliquam dolores maxime atque facilis quisquam quam libero voluptates dignissimos, quaerat dicta laborum? Commodi veritatis dicta itaque repudiandae ducimus iure libero illum repellat quae fuga quisquam placeat in, nihil blanditiis consequatur sequi nesciunt sapiente impedit, neque velit sit ab sint. Quisquam suscipit quasi optio vitae eius harum excepturi sint voluptate error reprehenderit, quidem quis autem minus rem id beatae illo, blanditiis, cum eaque? Quod beatae illum reprehenderit similique praesentium dolores libero totam consequatur, voluptas maiores culpa. Fugit dolore qui quidem assumenda esse excepturi suscipit id ab nulla natus reprehenderit voluptatem quas a hic, aliquam sint atque numquam ea recusandae optio sed deserunt voluptatum explicabo quasi cumque? Fuga accusamus, eos consectetur eveniet nesciunt iure neque itaque dicta, sunt, error quidem laboriosam earum et nam numquam! Sequi at incidunt architecto amet delectus neque dolorem quisquam consectetur modi aut. Ad reiciendis, tenetur ut aut aliquam, iste qui deserunt, sed, laudantium doloremque veritatis expedita asperiores atque assumenda quibusdam delectus eligendi aliquid officia impedit dolore dolorum.&nbsp;<br />\r\nEos, reiciendis nam! Sunt voluptates amet doloribus dolore tempore rerum laborum distinctio aliquam doloremque? Sint, eos ad. Iure ab explicabo provident sint distinctio velit cum voluptates labore, assumenda error ut voluptatem aperiam, optio, tenetur! Fugiat nesciunt a quo sed animi sequi quis iure assumenda qui possimus, repellat libero deserunt similique esse fuga. Veritatis ipsam aliquid natus similique ullam dolorem fuga, porro asperiores doloribus neque dignissimos, soluta deleniti ut, vitae! Possimus maiores porro expedita, sunt minus officiis, accusamus vel, tempora aperiam fuga sapiente quasi earum quia fugit, doloremque doloribus explicabo laborum maxime soluta nulla quidem debitis. Facilis, at ab rerum! Culpa obcaecati quam maiores assumenda, reiciendis, explicabo soluta numquam sapiente recusandae maxime commodi dolor earum iusto nesciunt asperiores ex placeat consequatur quibusdam ipsam cupiditate reprehenderit? Quae officia eos, sapiente iste aliquid exercitationem repudiandae sint dolorem aut mollitia reiciendis perferendis id laudantium, perspiciatis fugiat.&nbsp;<br />\r\nMinima, voluptatum, hic necessitatibus qui accusamus libero quas, esse molestias possimus, nisi aspernatur excepturi voluptate rem dicta! Laborum similique nisi ducimus quam commodi voluptatum saepe, consequuntur assumenda eum dolores, nihil deleniti laudantium omnis a, optio quod magnam adipisci! Id, doloribus inventore velit alias quidem, quae. Non molestias, corporis delectus fuga recusandae est, consequuntur in esse error nisi maxime id quis deleniti inventore quas, officia quo quod corrupti! Error ipsa quam fugit porro eius quaerat adipisci expedita ducimus minima nam obcaecati voluptates alias odio non ea unde quis praesentium tenetur, magnam dolorum, suscipit aut reiciendis doloremque nisi. Magnam sed laborum a cum molestiae accusantium veritatis, soluta unde aspernatur, dolorem, amet consectetur pariatur tempora assumenda quos, doloremque harum reprehenderit earum!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"], ["updated_at", "2016-11-17 20:26:25.187171"], ["id", 1]]
+  [1m[36m (108.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/hello-word
+Completed 302 Found in 115ms (ActiveRecord: 109.1ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:26:25 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/hello-word/edit" for 127.0.0.1 at 2016-11-17 18:26:41 -0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/edit.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:42 -0200
+
+
+Started GET "/assets/ckeditor/lang/pt-br.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:42 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:42 -0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:42 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/icons.png?t=b47abaf" for 127.0.0.1 at 2016-11-17 18:26:42 -0200
+
+
+Started GET "/assets/ckeditor/contents.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:26:42 -0200
+
+
+Started PATCH "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:26:43 -0200
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AdLir07bdtFksUa36FD6X/kO2CtUHXzSyCwkuDGeSvmyQknYBkRi7G/vPN5M6NLZl7VIITl96B1FvmAfJj9tRw==", "post"=>{"title"=>"Hello Word!", "body"=>"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minima doloremque, explicabo blanditiis aut nemo ex, nesciunt eos, laboriosam distinctio voluptatum! Blanditiis, eligendi. Ab quasi esse incidunt doloribus, nam obcaecati magni facilis labore fugit quia amet enim similique debitis vitae voluptate, asperiores quidem sapiente dolor, quisquam quis? Incidunt qui dolore dolorum doloribus numquam hic asperiores facilis voluptas iste, deleniti aliquid, repellendus eveniet provident beatae a magni possimus labore quod aspernatur.&nbsp;<br />\r\nCum animi debitis temporibus labore distinctio dolorem voluptas magnam ipsa est nam, quia, cupiditate. Reiciendis deserunt laboriosam cum voluptates maxime adipisci accusamus est iste provident dolor, asperiores nisi, accusantium fuga dolore veritatis quam quo, optio tenetur a, ullam repellendus. Dolorum eum, ex aliquam voluptatibus cupiditate reiciendis voluptas delectus facilis necessitatibus qui sint iure possimus sapiente, nesciunt aperiam cumque voluptates consectetur. Adipisci et facere explicabo officiis natus sed, aut dicta pariatur cupiditate neque ad nam sit, consequatur fugiat, a ea optio corporis.&nbsp;<br />\r\nReiciendis repudiandae modi dolores voluptatem tempora deserunt eaque eveniet, nam temporibus dolorem rem alias ex qui, minus beatae eum assumenda harum veritatis sunt consequuntur. Quis culpa cum tempora nihil fugiat repellendus deserunt iste doloremque quod perspiciatis, hic unde dolorum molestiae nam error consectetur a placeat asperiores impedit quibusdam voluptatem sint magnam excepturi totam. Et doloremque veritatis laboriosam voluptates vero qui sint laborum ex blanditiis maiores error vel ducimus aut quaerat soluta beatae nihil porro, autem nostrum voluptatem quos, neque provident explicabo! Perferendis numquam error, inventore ipsam unde mollitia et aliquid natus. Similique explicabo facilis numquam voluptate quod, amet ipsa quibusdam neque unde, odio harum maxime perferendis excepturi, laboriosam vitae quis, ab sequi corrupti.&nbsp;<br />\r\nTenetur error, doloremque aliquam corporis. Adipisci, cum sapiente veritatis, aspernatur eveniet unde vitae, assumenda perspiciatis atque ratione libero? Quam, obcaecati delectus officiis! Omnis ab rerum sapiente voluptas, dicta natus, architecto obcaecati est repellendus commodi magnam minima vitae nesciunt? Repudiandae eos ex odio temporibus, ipsum molestias, tempore enim laborum laboriosam consequatur ratione optio veritatis illum. Perferendis quis, commodi nemo, eligendi optio possimus deserunt minus magnam aut corporis quidem assumenda quibusdam iusto soluta sapiente similique libero maxime dignissimos non neque excepturi expedita impedit? Doloremque et eos sequi expedita nostrum voluptates, non laboriosam sunt ut quidem, dolores harum sed, repudiandae aliquid minima magnam dicta! Ducimus voluptates laboriosam itaque ut natus enim, soluta placeat corporis mollitia explicabo, possimus atque alias eveniet. Nesciunt, blanditiis, cumque! Ut qui tempora quis, doloribus omnis tempore nobis consequatur ipsum atque eos expedita numquam animi, iste minus est blanditiis ullam? Iure quibusdam voluptate quaerat minus fugiat assumenda voluptatem aliquid nobis id deleniti dicta qui repellendus iusto cumque obcaecati nulla labore necessitatibus ipsa explicabo, libero unde. Consectetur sapiente labore nesciunt iusto provident, incidunt necessitatibus enim voluptate laboriosam dignissimos voluptatem quia molestias, at quaerat minima et facere aut eius numquam unde veniam! Repudiandae ab, asperiores quibusdam vel exercitationem et eaque vitae maxime perferendis, tempore cupiditate, accusantium enim, soluta at odit est. Praesentium assumenda maiores facere corrupti corporis aut nobis eius perferendis alias magni laborum numquam aperiam, quibusdam qui quae eos eaque dolorem cupiditate laboriosam earum. Blanditiis facilis voluptatum rerum omnis, similique pariatur. Minima illo fuga quaerat nobis a qui aut voluptas consequuntur beatae nesciunt iusto voluptatum molestias id sunt deserunt ipsa aliquid eveniet magni vitae, ducimus facere animi accusamus veritatis quod. Doloribus in quo cum consectetur, dolore quisquam omnis nemo officia at blanditiis quae beatae eius temporibus ad, dolorem inventore illum? Quam, accusamus voluptates cumque commodi autem accusantium ad illum quibusdam adipisci, voluptate cupiditate ipsa id similique.&nbsp;<br />\r\nCum exercitationem tenetur magni nemo, facere repellendus. Laboriosam repellendus consequatur aliquam dolores maxime atque facilis quisquam quam libero voluptates dignissimos, quaerat dicta laborum? Commodi veritatis dicta itaque repudiandae ducimus iure libero illum repellat quae fuga quisquam placeat in, nihil blanditiis consequatur sequi nesciunt sapiente impedit, neque velit sit ab sint. Quisquam suscipit quasi optio vitae eius harum excepturi sint voluptate error reprehenderit, quidem quis autem minus rem id beatae illo, blanditiis, cum eaque? Quod beatae illum reprehenderit similique praesentium dolores libero totam consequatur, voluptas maiores culpa. Fugit dolore qui quidem assumenda esse excepturi suscipit id ab nulla natus reprehenderit voluptatem quas a hic, aliquam sint atque numquam ea recusandae optio sed deserunt voluptatum explicabo quasi cumque? Fuga accusamus, eos consectetur eveniet nesciunt iure neque itaque dicta, sunt, error quidem laboriosam earum et nam numquam! Sequi at incidunt architecto amet delectus neque dolorem quisquam consectetur modi aut. Ad reiciendis, tenetur ut aut aliquam, iste qui deserunt, sed, laudantium doloremque veritatis expedita asperiores atque assumenda quibusdam delectus eligendi aliquid officia impedit dolore dolorum.&nbsp;<br />\r\nEos, reiciendis nam! Sunt voluptates amet doloribus dolore tempore rerum laborum distinctio aliquam doloremque? Sint, eos ad. Iure ab explicabo provident sint distinctio velit cum voluptates labore, assumenda error ut voluptatem aperiam, optio, tenetur! Fugiat nesciunt a quo sed animi sequi quis iure assumenda qui possimus, repellat libero deserunt similique esse fuga. Veritatis ipsam aliquid natus similique ullam dolorem fuga, porro asperiores doloribus neque dignissimos, soluta deleniti ut, vitae! Possimus maiores porro expedita, sunt minus officiis, accusamus vel, tempora aperiam fuga sapiente quasi earum quia fugit, doloremque doloribus explicabo laborum maxime soluta nulla quidem debitis. Facilis, at ab rerum! Culpa obcaecati quam maiores assumenda, reiciendis, explicabo soluta numquam sapiente recusandae maxime commodi dolor earum iusto nesciunt asperiores ex placeat consequatur quibusdam ipsam cupiditate reprehenderit? Quae officia eos, sapiente iste aliquid exercitationem repudiandae sint dolorem aut mollitia reiciendis perferendis id laudantium, perspiciatis fugiat.&nbsp;<br />\r\nMinima, voluptatum, hic necessitatibus qui accusamus libero quas, esse molestias possimus, nisi aspernatur excepturi voluptate rem dicta! Laborum similique nisi ducimus quam commodi voluptatum saepe, consequuntur assumenda eum dolores, nihil deleniti laudantium omnis a, optio quod magnam adipisci! Id, doloribus inventore velit alias quidem, quae. Non molestias, corporis delectus fuga recusandae est, consequuntur in esse error nisi maxime id quis deleniti inventore quas, officia quo quod corrupti! Error ipsa quam fugit porro eius quaerat adipisci expedita ducimus minima nam obcaecati voluptates alias odio non ea unde quis praesentium tenetur, magnam dolorum, suscipit aut reiciendis doloremque nisi. Magnam sed laborum a cum molestiae accusantium veritatis, soluta unde aspernatur, dolorem, amet consectetur pariatur tempora assumenda quos, doloremque harum reprehenderit earum!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"}, "commit"=>"Update Post", "id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/hello-word
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:26:44 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:24 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:36 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:27:59 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:28:34 -0200
+
+
+Started GET "/assets/ckeditor/config.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:28:57 -0200
+
+
+Started GET "/assets/ckeditor/lang/pt-br.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:28:57 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:28:57 -0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:28:57 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png?t=b47abaf" for 127.0.0.1 at 2016-11-17 18:28:58 -0200
+
+
+Started GET "/assets/ckeditor/contents.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:28:58 -0200
+
+
+Started PATCH "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:29:00 -0200
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AdLir07bdtFksUa36FD6X/kO2CtUHXzSyCwkuDGeSvmyQknYBkRi7G/vPN5M6NLZl7VIITl96B1FvmAfJj9tRw==", "post"=>{"title"=>"Hello Word!", "body"=>"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minima doloremque, explicabo blanditiis aut nemo ex, nesciunt eos, laboriosam distinctio voluptatum! Blanditiis, eligendi. Ab quasi esse incidunt doloribus, nam obcaecati magni facilis labore fugit quia amet enim similique debitis vitae voluptate, asperiores quidem sapiente dolor, quisquam quis? Incidunt qui dolore dolorum doloribus numquam hic asperiores facilis voluptas iste, deleniti aliquid, repellendus eveniet provident beatae a magni possimus labore quod aspernatur.&nbsp;<br />\r\nCum animi debitis temporibus labore distinctio dolorem voluptas magnam ipsa est nam, quia, cupiditate. Reiciendis deserunt laboriosam cum voluptates maxime adipisci accusamus est iste provident dolor, asperiores nisi, accusantium fuga dolore veritatis quam quo, optio tenetur a, ullam repellendus. Dolorum eum, ex aliquam voluptatibus cupiditate reiciendis voluptas delectus facilis necessitatibus qui sint iure possimus sapiente, nesciunt aperiam cumque voluptates consectetur. Adipisci et facere explicabo officiis natus sed, aut dicta pariatur cupiditate neque ad nam sit, consequatur fugiat, a ea optio corporis.&nbsp;<br />\r\nReiciendis repudiandae modi dolores voluptatem tempora deserunt eaque eveniet, nam temporibus dolorem rem alias ex qui, minus beatae eum assumenda harum veritatis sunt consequuntur. Quis culpa cum tempora nihil fugiat repellendus deserunt iste doloremque quod perspiciatis, hic unde dolorum molestiae nam error consectetur a placeat asperiores impedit quibusdam voluptatem sint magnam excepturi totam. Et doloremque veritatis laboriosam voluptates vero qui sint laborum ex blanditiis maiores error vel ducimus aut quaerat soluta beatae nihil porro, autem nostrum voluptatem quos, neque provident explicabo! Perferendis numquam error, inventore ipsam unde mollitia et aliquid natus. Similique explicabo facilis numquam voluptate quod, amet ipsa quibusdam neque unde, odio harum maxime perferendis excepturi, laboriosam vitae quis, ab sequi corrupti.&nbsp;<br />\r\nTenetur error, doloremque aliquam corporis. Adipisci, cum sapiente veritatis, aspernatur eveniet unde vitae, assumenda perspiciatis atque ratione libero? Quam, obcaecati delectus officiis! Omnis ab rerum sapiente voluptas, dicta natus, architecto obcaecati est repellendus commodi magnam minima vitae nesciunt? Repudiandae eos ex odio temporibus, ipsum molestias, tempore enim laborum laboriosam consequatur ratione optio veritatis illum. Perferendis quis, commodi nemo, eligendi optio possimus deserunt minus magnam aut corporis quidem assumenda quibusdam iusto soluta sapiente similique libero maxime dignissimos non neque excepturi expedita impedit? Doloremque et eos sequi expedita nostrum voluptates, non laboriosam sunt ut quidem, dolores harum sed, repudiandae aliquid minima magnam dicta! Ducimus voluptates laboriosam itaque ut natus enim, soluta placeat corporis mollitia explicabo, possimus atque alias eveniet. Nesciunt, blanditiis, cumque! Ut qui tempora quis, doloribus omnis tempore nobis consequatur ipsum atque eos expedita numquam animi, iste minus est blanditiis ullam? Iure quibusdam voluptate quaerat minus fugiat assumenda voluptatem aliquid nobis id deleniti dicta qui repellendus iusto cumque obcaecati nulla labore necessitatibus ipsa explicabo, libero unde. Consectetur sapiente labore nesciunt iusto provident, incidunt necessitatibus enim voluptate laboriosam dignissimos voluptatem quia molestias, at quaerat minima et facere aut eius numquam unde veniam! Repudiandae ab, asperiores quibusdam vel exercitationem et eaque vitae maxime perferendis, tempore cupiditate, accusantium enim, soluta at odit est. Praesentium assumenda maiores facere corrupti corporis aut nobis eius perferendis alias magni laborum numquam aperiam, quibusdam qui quae eos eaque dolorem cupiditate laboriosam earum. Blanditiis facilis voluptatum rerum omnis, similique pariatur. Minima illo fuga quaerat nobis a qui aut voluptas consequuntur beatae nesciunt iusto voluptatum molestias id sunt deserunt ipsa aliquid eveniet magni vitae, ducimus facere animi accusamus veritatis quod. Doloribus in quo cum consectetur, dolore quisquam omnis nemo officia at blanditiis quae beatae eius temporibus ad, dolorem inventore illum? Quam, accusamus voluptates cumque commodi autem accusantium ad illum quibusdam adipisci, voluptate cupiditate ipsa id similique.&nbsp;<br />\r\nCum exercitationem tenetur magni nemo, facere repellendus. Laboriosam repellendus consequatur aliquam dolores maxime atque facilis quisquam quam libero voluptates dignissimos, quaerat dicta laborum? Commodi veritatis dicta itaque repudiandae ducimus iure libero illum repellat quae fuga quisquam placeat in, nihil blanditiis consequatur sequi nesciunt sapiente impedit, neque velit sit ab sint. Quisquam suscipit quasi optio vitae eius harum excepturi sint voluptate error reprehenderit, quidem quis autem minus rem id beatae illo, blanditiis, cum eaque? Quod beatae illum reprehenderit similique praesentium dolores libero totam consequatur, voluptas maiores culpa. Fugit dolore qui quidem assumenda esse excepturi suscipit id ab nulla natus reprehenderit voluptatem quas a hic, aliquam sint atque numquam ea recusandae optio sed deserunt voluptatum explicabo quasi cumque? Fuga accusamus, eos consectetur eveniet nesciunt iure neque itaque dicta, sunt, error quidem laboriosam earum et nam numquam! Sequi at incidunt architecto amet delectus neque dolorem quisquam consectetur modi aut. Ad reiciendis, tenetur ut aut aliquam, iste qui deserunt, sed, laudantium doloremque veritatis expedita asperiores atque assumenda quibusdam delectus eligendi aliquid officia impedit dolore dolorum.&nbsp;<br />\r\nEos, reiciendis nam! Sunt voluptates amet doloribus dolore tempore rerum laborum distinctio aliquam doloremque? Sint, eos ad. Iure ab explicabo provident sint distinctio velit cum voluptates labore, assumenda error ut voluptatem aperiam, optio, tenetur! Fugiat nesciunt a quo sed animi sequi quis iure assumenda qui possimus, repellat libero deserunt similique esse fuga. Veritatis ipsam aliquid natus similique ullam dolorem fuga, porro asperiores doloribus neque dignissimos, soluta deleniti ut, vitae! Possimus maiores porro expedita, sunt minus officiis, accusamus vel, tempora aperiam fuga sapiente quasi earum quia fugit, doloremque doloribus explicabo laborum maxime soluta nulla quidem debitis. Facilis, at ab rerum! Culpa obcaecati quam maiores assumenda, reiciendis, explicabo soluta numquam sapiente recusandae maxime commodi dolor earum iusto nesciunt asperiores ex placeat consequatur quibusdam ipsam cupiditate reprehenderit? Quae officia eos, sapiente iste aliquid exercitationem repudiandae sint dolorem aut mollitia reiciendis perferendis id laudantium, perspiciatis fugiat.&nbsp;<br />\r\nMinima, voluptatum, hic necessitatibus qui accusamus libero quas, esse molestias possimus, nisi aspernatur excepturi voluptate rem dicta! Laborum similique nisi ducimus quam commodi voluptatum saepe, consequuntur assumenda eum dolores, nihil deleniti laudantium omnis a, optio quod magnam adipisci! Id, doloribus inventore velit alias quidem, quae. Non molestias, corporis delectus fuga recusandae est, consequuntur in esse error nisi maxime id quis deleniti inventore quas, officia quo quod corrupti! Error ipsa quam fugit porro eius quaerat adipisci expedita ducimus minima nam obcaecati voluptates alias odio non ea unde quis praesentium tenetur, magnam dolorum, suscipit aut reiciendis doloremque nisi. Magnam sed laborum a cum molestiae accusantium veritatis, soluta unde aspernatur, dolorem, amet consectetur pariatur tempora assumenda quos, doloremque harum reprehenderit earum!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"}, "commit"=>"Update Post", "id"=>"hello-word"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/hello-word
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:29:00 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/assets/igor-6ba68f392dcc1395124bf0f9e01f6583b489e1be562f364c2175268b5bda2301.jpg" for 127.0.0.1 at 2016-11-17 18:29:56 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/igor-6ba68f392dcc1395124bf0f9e01f6583b489e1be562f364c2175268b5bda2301.jpg" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:16 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:30:42 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:30:43 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:28 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:50 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:31:54 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:14 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:26 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:27 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:32:31 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:31 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:31 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:32 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:32:44 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:34:02 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `raw' for #<String:0x007f75d8f0ead8>):
+    1: <h1><%= @post.title%></h1>
+    2: <div><%= @post.body.raw%></div>
+    3: <% if user_signed_in? %>
+    4:   <%= link_to "Edit Post", edit_post_path(@post) %>
+    5:   <%= link_to "Delete Post", post_path(@post), method: :delete, data:{confirm: "Are you sure?"} %>
+  app/views/posts/show.html.erb:2:in `_app_views_posts_show_html_erb___2244260240148362802_70072063931680'
+
+
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/igor-vieira/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.6ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:34:51 -0200
+
+
+Started GET "/posts/hello-word/edit" for 127.0.0.1 at 2016-11-17 18:34:59 -0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (2.8ms)
+  Rendered posts/edit.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:00 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:00 -0200
+
+
+Started GET "/assets/ckeditor/lang/pt-br.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:00 -0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:00 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/icons.png?t=b47abaf" for 127.0.0.1 at 2016-11-17 18:35:00 -0200
+
+
+Started GET "/assets/ckeditor/contents.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:00 -0200
+
+
+Started PATCH "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:35:07 -0200
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XPAYHcfurC677IwbHGqpL5rbz2lk0pdTfQR0VQqXK2LvYLNqj3G4E7Cy9nK40oGp9GBfYwmyA5zwljDyHTYM3A==", "post"=>{"title"=>"Hello Word!", "body"=>"<p><br />\r\nEos, reiciendis nam! Sunt voluptates amet doloribus dolore tempore rerum laborum distinctio aliquam doloremque? Sint, eos ad. Iure ab explicabo provident sint distinctio velit cum voluptates labore, assumenda error ut voluptatem aperiam, optio, tenetur! Fugiat nesciunt a quo sed animi sequi quis iure assumenda qui possimus, repellat libero deserunt similique esse fuga. Veritatis ipsam aliquid natus similique ullam dolorem fuga, porro asperiores doloribus neque dignissimos, soluta deleniti ut, vitae! Possimus maiores porro expedita, sunt minus officiis, accusamus vel, tempora aperiam fuga sapiente quasi earum quia fugit, doloremque doloribus explicabo laborum maxime soluta nulla quidem debitis. Facilis, at ab rerum! Culpa obcaecati quam maiores assumenda, reiciendis, explicabo soluta numquam sapiente recusandae maxime commodi dolor earum iusto nesciunt asperiores ex placeat consequatur quibusdam ipsam cupiditate reprehenderit? Quae officia eos, sapiente iste aliquid exercitationem repudiandae sint dolorem aut mollitia reiciendis perferendis id laudantium, perspiciatis fugiat.&nbsp;<br />\r\nMinima, voluptatum, hic necessitatibus qui accusamus libero quas, esse molestias possimus, nisi aspernatur excepturi voluptate rem dicta! Laborum similique nisi ducimus quam commodi voluptatum saepe, consequuntur assumenda eum dolores, nihil deleniti laudantium omnis a, optio quod magnam adipisci! Id, doloribus inventore velit alias quidem, quae. Non molestias, corporis delectus fuga recusandae est, consequuntur in esse error nisi maxime id quis deleniti inventore quas, officia quo quod corrupti! Error ipsa quam fugit porro eius quaerat adipisci expedita ducimus minima nam obcaecati voluptates alias odio non ea unde quis praesentium tenetur, magnam dolorum, suscipit aut reiciendis doloremque nisi. Magnam sed laborum a cum molestiae accusantium veritatis, soluta unde aspernatur, dolorem, amet consectetur pariatur tempora assumenda quos, doloremque harum reprehenderit earum!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"}, "commit"=>"Update Post", "id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["body", "<p><br />\r\nEos, reiciendis nam! Sunt voluptates amet doloribus dolore tempore rerum laborum distinctio aliquam doloremque? Sint, eos ad. Iure ab explicabo provident sint distinctio velit cum voluptates labore, assumenda error ut voluptatem aperiam, optio, tenetur! Fugiat nesciunt a quo sed animi sequi quis iure assumenda qui possimus, repellat libero deserunt similique esse fuga. Veritatis ipsam aliquid natus similique ullam dolorem fuga, porro asperiores doloribus neque dignissimos, soluta deleniti ut, vitae! Possimus maiores porro expedita, sunt minus officiis, accusamus vel, tempora aperiam fuga sapiente quasi earum quia fugit, doloremque doloribus explicabo laborum maxime soluta nulla quidem debitis. Facilis, at ab rerum! Culpa obcaecati quam maiores assumenda, reiciendis, explicabo soluta numquam sapiente recusandae maxime commodi dolor earum iusto nesciunt asperiores ex placeat consequatur quibusdam ipsam cupiditate reprehenderit? Quae officia eos, sapiente iste aliquid exercitationem repudiandae sint dolorem aut mollitia reiciendis perferendis id laudantium, perspiciatis fugiat.&nbsp;<br />\r\nMinima, voluptatum, hic necessitatibus qui accusamus libero quas, esse molestias possimus, nisi aspernatur excepturi voluptate rem dicta! Laborum similique nisi ducimus quam commodi voluptatum saepe, consequuntur assumenda eum dolores, nihil deleniti laudantium omnis a, optio quod magnam adipisci! Id, doloribus inventore velit alias quidem, quae. Non molestias, corporis delectus fuga recusandae est, consequuntur in esse error nisi maxime id quis deleniti inventore quas, officia quo quod corrupti! Error ipsa quam fugit porro eius quaerat adipisci expedita ducimus minima nam obcaecati voluptates alias odio non ea unde quis praesentium tenetur, magnam dolorum, suscipit aut reiciendis doloremque nisi. Magnam sed laborum a cum molestiae accusantium veritatis, soluta unde aspernatur, dolorem, amet consectetur pariatur tempora assumenda quos, doloremque harum reprehenderit earum!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"], ["updated_at", "2016-11-17 20:35:07.553253"], ["id", 1]]
+  [1m[36m (575.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/hello-word
+Completed 302 Found in 581ms (ActiveRecord: 576.5ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:35:08 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/hello-word/edit" for 127.0.0.1 at 2016-11-17 18:35:18 -0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/edit.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:18 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:18 -0200
+
+
+Started GET "/assets/ckeditor/lang/pt-br.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:18 -0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:18 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/icons.png?t=b47abaf" for 127.0.0.1 at 2016-11-17 18:35:18 -0200
+
+
+Started GET "/assets/ckeditor/contents.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:35:18 -0200
+
+
+Started PATCH "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:35:29 -0200
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rcVioH8SVnkMOazANn3RMwAtngbYeYzNwPbFYPy+/IAeVcnXN41CRAdn1qmSxfm1bpYODLUZGAJNZIHH6x/bPg==", "post"=>{"title"=>"Hello Word!", "body"=>"<p>Text</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"}, "commit"=>"Update Post", "id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mUPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["body", "<p>Text</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"], ["updated_at", "2016-11-17 20:35:29.867957"], ["id", 1]]
+  [1m[35m (75.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/hello-word
+Completed 302 Found in 87ms (ActiveRecord: 78.5ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:35:29 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:04 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:46 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/footer.self-c7507846baaac839b8e23258c54a42b1e2b03984b318e8092eaa06d8f77fd6a9.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/application.self-6d6ed290d86a8186813e551960819b98a2d5848d895347ea4324d5dba25ec493.css?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:36:54 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 500ms (Views: 495.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/footer.self-53c2ade757431096acb6c653c9be8a2c96fbc9ce699b13f432522d1762a4548a.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/application.self-4d041b730408b1cfc07b383caffef8e3f11ac1b9dfc4c3cae09b5969521211f1.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:12 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:38:39 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 127.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:39 -0200
+
+
+Started GET "/assets/footer.self-3a1c4c9a014aa1bbc90a1f949eae4740cbbf16e4b35251c3568cbf8f08b4569a.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/application.self-69c643c1d1028fc63007d25ce4278cfa1fc7dfaa960c93befaeed81748785618.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:38:40 -0200
+
+
+Started GET "/posts/hello-word/edit" for 127.0.0.1 at 2016-11-17 18:38:43 -0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (5.0ms)
+  Rendered posts/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:38:43 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:38:43 -0200
+
+
+Started GET "/assets/ckeditor/lang/pt-br.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:38:43 -0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=G6DE" for 127.0.0.1 at 2016-11-17 18:38:43 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/icons.png?t=b47abaf" for 127.0.0.1 at 2016-11-17 18:38:43 -0200
+
+
+Started GET "/assets/ckeditor/contents.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:38:43 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=G6DE" for 127.0.0.1 at 2016-11-17 18:38:57 -0200
+
+
+Started GET "/assets/ckeditor/plugins/icons.png?t=G6DE" for 127.0.0.1 at 2016-11-17 18:38:57 -0200
+
+
+Started GET "/assets/ckeditor/skins/moono/icons.png?t=b47abaf" for 127.0.0.1 at 2016-11-17 18:38:57 -0200
+
+
+Started PATCH "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:38:58 -0200
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iqe4aY1Pq9xmjs5avdSWIVEp6Pas6zsVyYkPY61MZQ05NxMexdC/4W3QtDMZbL6nP5J4/MGLr9pEG0vEuu1Csw==", "post"=>{"title"=>"Hello Word!", "body"=>"<p>What rails does very nicely is protect you from XSS attacks through aggressively HTML encoding anything you write between&nbsp;<code>&lt;%= %&gt;</code>. But there is one caveat: At times you may really want to render HTML from a string. So you need to tell rails not to escape your HTML in that case.</p>\r\n\r\n<p>There are two methods of telling rails that a string is safe and should not be escaped:&nbsp;<a href=\"http://apidock.com/rails/ActionView/Helpers/OutputSafetyHelper/raw\">raw</a>&nbsp;and&nbsp;<a href=\"http://apidock.com/rails/String/html_safe\">.htmlsafe</a></p>\r\n\r\n<p>And both do the same. They mark the string as safe (through the use of the html safe buffer) and rails will not encode it any more. The main difference between the two:&nbsp;<strong>nil</strong>.</p>\r\n\r\n<p>If you are doing things like:&nbsp;<code>&quot;&lt;img src=&#39;\#{..}&#39; /&gt;&quot;.html_safe</code>&nbsp;.html_safe is totally fine as the string will never be&nbsp;<code>nil</code>, but if you are dealing with strings that may be nil .html_safe will break since there is no .html_safe method on the nil object. (For example if you are loading something from a config value or the database) In that case using&nbsp;<code>raw(...)</code>&nbsp;will just ignore the string instead of raising an exception.</p>\r\n\r\n<p>As always with these things: raw and html_safe make it very easy to introduce XSS attack vectors into your application. So use them wisely and only on strings you are sure to be safe.</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"}, "commit"=>"Update Post", "id"=>"hello-word"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "hello-word"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["body", "<p>What rails does very nicely is protect you from XSS attacks through aggressively HTML encoding anything you write between&nbsp;<code>&lt;%= %&gt;</code>. But there is one caveat: At times you may really want to render HTML from a string. So you need to tell rails not to escape your HTML in that case.</p>\r\n\r\n<p>There are two methods of telling rails that a string is safe and should not be escaped:&nbsp;<a href=\"http://apidock.com/rails/ActionView/Helpers/OutputSafetyHelper/raw\">raw</a>&nbsp;and&nbsp;<a href=\"http://apidock.com/rails/String/html_safe\">.htmlsafe</a></p>\r\n\r\n<p>And both do the same. They mark the string as safe (through the use of the html safe buffer) and rails will not encode it any more. The main difference between the two:&nbsp;<strong>nil</strong>.</p>\r\n\r\n<p>If you are doing things like:&nbsp;<code>&quot;&lt;img src=&#39;\#{..}&#39; /&gt;&quot;.html_safe</code>&nbsp;.html_safe is totally fine as the string will never be&nbsp;<code>nil</code>, but if you are dealing with strings that may be nil .html_safe will break since there is no .html_safe method on the nil object. (For example if you are loading something from a config value or the database) In that case using&nbsp;<code>raw(...)</code>&nbsp;will just ignore the string instead of raising an exception.</p>\r\n\r\n<p>As always with these things: raw and html_safe make it very easy to introduce XSS attack vectors into your application. So use them wisely and only on strings you are sure to be safe.</p>\r\n\r\n<footer>&nbsp;</footer>\r\n"], ["updated_at", "2016-11-17 20:38:58.964235"], ["id", 1]]
+  [1m[36m (444.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/hello-word
+Completed 302 Found in 451ms (ActiveRecord: 445.1ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:38:59 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/footer.self-3a1c4c9a014aa1bbc90a1f949eae4740cbbf16e4b35251c3568cbf8f08b4569a.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/application.self-69c643c1d1028fc63007d25ce4278cfa1fc7dfaa960c93befaeed81748785618.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:11 -0200
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/footer.self-3a1c4c9a014aa1bbc90a1f949eae4740cbbf16e4b35251c3568cbf8f08b4569a.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/application.self-69c643c1d1028fc63007d25ce4278cfa1fc7dfaa960c93befaeed81748785618.css?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:39:41 -0200
+
+
+Started GET "/about" for 127.0.0.1 at 2016-11-17 18:39:46 -0200
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/igor-6ba68f392dcc1395124bf0f9e01f6583b489e1be562f364c2175268b5bda2301.jpg" for 127.0.0.1 at 2016-11-17 18:39:46 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-17 18:39:50 -0200
+Processing by HomeController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.3ms)

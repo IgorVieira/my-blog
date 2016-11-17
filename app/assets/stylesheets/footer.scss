@@ -2,16 +2,18 @@
 
 
 footer{
-    text-align: center;
-    background: #e16c58;
-    color: white;
-    line-height: 50px;
-    padding: 0 20px 10px;
-    margin-bottom: 0px;
+    visibility: hidden;
 }
 
 
 .footer {
+   visibility: visible;
+  text-align: center;
+  background: #e16c58;
+  color: white;
+  line-height: 50px;
+  padding: 0 20px 10px;
+  margin-bottom: 0px;
   height: 75.5px;
     ul li{
         list-style: none;   
