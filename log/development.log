@@ -4140,3 +4140,96 @@ Processing by HomeController#index as HTML
   Rendered layouts/_navbar.html.erb (0.4ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2016-11-17 18:41:22 -0200
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-17 18:42:01 -0200
+Processing by HomeController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:42:03 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/hello-word" for 127.0.0.1 at 2016-11-17 18:42:33 -0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-word"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "hello-word"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/base.self-9a97563c8021ae9830aedf361a7d2bcaf576aabb1b978ffc291c6b25d38985e8.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:33 -0200
+
+
+Started GET "/assets/contact.self-66e57f962a93fec5ec763562bf2edc06adfb47315e90f48f79272978cdde2bdf.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:33 -0200
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/footer.self-3a1c4c9a014aa1bbc90a1f949eae4740cbbf16e4b35251c3568cbf8f08b4569a.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/normalize.self-a928fe12a4f7879299163707b8be50b6cc171b5db5e603b86cc55cb4e0818623.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/menu.self-79a1afee5c663815902b9a8d03f7866a88f0e8891079c1a0c2531fa0855831b4.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/application.self-69c643c1d1028fc63007d25ce4278cfa1fc7dfaa960c93befaeed81748785618.css?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/fontawesome.self-fda11393c6f53fa420b5b31f3e0ee87b07d7c7864e5ee9e70cb7ec34fa437ca3.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/index.self-edad005f4ea29813824e8c19ab4ea090a94e5ba924485561018ff608a2998d22.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-17 18:42:34 -0200
