@@ -1,6 +1,17 @@
-<% @posts.each do |post| %>
-	<h2><%= post.title%></h2>
-	<div><%= post.body.html_safe%></div>
-	<br>
-	<%= link_to "Read Post", post %>
-<%end%>
+                <h1 class="text-header">Projetos</h1>
+                <hr class="line-space">
+                
+                <ul class="flex-container">
+                <% @projects.each do |project| %>
+                    <li class="flex-item">
+                       <a >
+                            <div class="post-it-note">
+                            <p class="post-it-text"><a href="#"><%= link_to project.title, project%></a></p>
+                            <p class="date"><%= project.created_at.strftime("%A,%b %d")%></p>
+                        </div>
+                       </a>
+                    </li>
+                     
+                    <% end %>
+                    
+                </ul>

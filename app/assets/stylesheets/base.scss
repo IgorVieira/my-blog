@@ -124,26 +124,26 @@ hr.line-space {
   position: relative;
   min-height: 2em;
   cursor: pointer;
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -1em;
-    left: 0;
-    right: 1em;
-    border-width: 0.5em;
-    border-style: solid;
-    border-color: $postitcolor;
-  }
-
-  &:before {
+    &:after {
       content: "";
       position: absolute;
       bottom: -1em;
-      right: 0;
-      border-width: 1em 1em 0 0;
+      left: 0;
+      right: 1em;
+      border-width: 0.5em;
       border-style: solid;
-      border-color: $datailpostit_color transparent;
-  }
+      border-color: $postitcolor;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -1em;
+        right: 0;
+        border-width: 1em 1em 0 0;
+        border-style: solid;
+        border-color: $datailpostit_color transparent;
+    }
 }
 
 a .post-it-note{
